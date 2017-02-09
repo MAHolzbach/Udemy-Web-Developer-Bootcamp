@@ -1,0 +1,33 @@
+body {
+  border: #bdc3c7 15px solid;
+  width: 800px;
+  font-family: "Source Sans Pro";
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.date {
+  color: #3498db;
+  margin-left: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+p {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+h1 {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+.blockquote {
+  border-left: #bdc3c7 5px solid;
+  padding-left: 3px;
+}
+hr {
+  height: 1px;
+  width: 760px;
+  background-color: #bdc3c7;
+}

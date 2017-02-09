@@ -1,0 +1,21 @@
+body {
+  background: gray;
+}
+h1 {
+  margin: 0 auto;
+  border: 2px black solid;
+  width: 250px;
+  text-align: center;
+}
+table {
+  margin: 0 auto;
+  border-spacing: 5px;
+}
+td {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+}
+td:hover {
+  background-color: steelblue;
+}
