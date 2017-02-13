@@ -11,50 +11,109 @@
 //   console.log("Just a normal age.");
 // }
 // Lecture 96 exercises.
-var num = -10;
+// var num = -10;
+//
+// while (num <= 19) {
+// 	document.write(num);
+// 	num++;
+// 	document.write("<br />");
+// }
+//
+// document.write("<br>");
+// document.write("Next problem!")
+// document.write("<br> <br>");
+//
+// var num = 10;
+//
+// while (num <= 40) {
+// 	document.write(num);
+// 	num+=2;
+// 	document.write("<br />");
+// }
+//
+// document.write("<br>");
+// document.write("Next problem!")
+// document.write("<br> <br>");
+//
+// var num = 300;
+//
+// while (num <= 333) {
+// 	if(num % 2 !== 0) {
+// 		document.write(num);
+// 		document.write("<br />");
+// 	}
+// 	num++;
+// }
+//
+// document.write("<br>");
+// document.write("Next problem!")
+// document.write("<br> <br>");
+//
+// var num = 5;
+//
+// while (num <= 50) {
+// 	if(num % 3 === 0 && num % 5 === 0) {
+// 		document.write(num);
+// 		document.write("<br />");
+// 	}
+// 	num++;
+// }
 
-while (num <= 19) {
-	document.write(num);
-	num++;
-	document.write("<br />");
-}
+// Lecture 101 exercises
+//
+// for(i = -10; i<=19; i++){
+// 	document.write(i);
+// 	document.write("<br />");
+// }
+// document.write("<br>");
+// document.write("Next problem!")
+// document.write("<br> <br>");
+//
+// for(i=10; i<=40; i+=2) {
+// 	document.write(i);
+// 	document.write("<br />");
+// }
+// document.write("<br>");
+// document.write("Next problem!")
+// document.write("<br> <br>");
+//
+// for(i=300; i<=333; i++) {
+// 	if(i % 2 !== 0) {
+// 		document.write(i);
+// 		document.write("<br />");
+// 	}
+// }
+// document.write("<br>");
+// document.write("Next problem!")
+// document.write("<br> <br>");
+//
+// for(i=5; i<=50; i++) {
+// 	if(i % 3 === 0 && i % 5 === 0){
+// 		document.write(i);
+// 		document.write("<br />");
+// 	}
+// }
 
-document.write("<br>");
-document.write("Next problem!")
-document.write("<br> <br>");
+// Lecture 108 exercises
 
-var num = 10;
-
-while (num <= 40) {
-	document.write(num);
-	num+=2;
-	document.write("<br />");
-}
-
-document.write("<br>");
-document.write("Next problem!")
-document.write("<br> <br>");
-
-var num = 300;
-
-while (num <= 333) {
-	if(num % 2 !== 0) {
-		document.write(num);
-		document.write("<br />");
+function isEven(number) {
+	if(number % 2 === 0) {
+		return true;
+	} else {
+		return false;
 	}
-	num++;
+}
+//This was a fail
+function factorial(number) {
+	if(number === 0) {
+		return 1;
+	};
+	for(i=1; i<=number; i++) {
+		return number * factorial(number-1);
+	}
 }
 
-document.write("<br>");
-document.write("Next problem!")
-document.write("<br> <br>");
-
-var num = 5;
-
-while (num <= 50) {
-	if(num % 3 === 0 && num % 5 === 0) {
-		document.write(num);
-		document.write("<br />");
-	}
-	num++;
+function kebabToSnake(str) {
+	var str = str.replace(/-/g, "_");
+	return(str);
 }
