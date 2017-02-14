@@ -96,24 +96,84 @@
 
 // Lecture 108 exercises
 
-function isEven(number) {
-	if(number % 2 === 0) {
-		return true;
-	} else {
-		return false;
+// function isEven(number) {
+// 	if(number % 2 === 0) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// }
+// //This was a fail
+// function factorial(number) {
+// 	if(number === 0) {
+// 		return 1;
+// 	};
+// 	for(i=1; i<=number; i++) {
+// 		return number * factorial(number-1);
+// 	}
+// }
+//
+// function kebabToSnake(str) {
+// 	var str = str.replace(/-/g, "_");
+// 	return(str);
+// }
+
+//Lecture 121 exercises
+
+function printReverse(array) {
+	for (i=array.length-1; i>=0; i--) {
+		document.write(array[i]);
+		document.write("<br>");
 	}
 }
-//This was a fail
-function factorial(number) {
-	if(number === 0) {
-		return 1;
-	};
-	for(i=1; i<=number; i++) {
-		return number * factorial(number-1);
-	}
+printReverse([1,2,3,4]);
+
+document.write("<br>");
+document.write("Next problem!")
+document.write("<br> <br>");
+
+function isUnifrom(array) {
+	var testCase = array[0];
+	var testResult;
+	array.forEach(function(arr) {
+		if (arr === testCase) {
+			testResult = true;
+		} else {
+			testResult = false;
+		}
+	});
+	document.write(testResult);
 }
 
-function kebabToSnake(str) {
-	var str = str.replace(/-/g, "_");
-	return(str);
+isUnifrom([1,1,1,1]);
+
+document.write("<br>");
+document.write("Next problem!")
+document.write("<br> <br>");
+
+function sumArray(array) {
+	var result = 0;
+
+	array.forEach(function(items) {
+		result += items;
+	});
+	document.write(result);
 }
+
+sumArray([1,2,9]);
+
+document.write("<br>");
+document.write("Next problem!")
+document.write("<br> <br>");
+
+function max(array) {
+	var answer = array[0];
+
+	array.forEach(function(num) {
+		if (num > answer) {
+			answer = num;
+		}
+	});
+	document.write(answer);
+}
+max([-31,-40,-123]);
