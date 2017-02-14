@@ -132,20 +132,18 @@ document.write("<br>");
 document.write("Next problem!")
 document.write("<br> <br>");
 
-function isUnifrom(array) {
+function isUniform(array) {
 	var testCase = array[0];
-	var testResult;
-	array.forEach(function(arr) {
-		if (arr === testCase) {
-			testResult = true;
+	array.forEach(function(arr) { //shoulda used a for loop
+		if (arr !== testCase) {
+			return false;
 		} else {
-			testResult = false;
+			return true;
 		}
 	});
-	document.write(testResult);
 }
 
-isUnifrom([1,1,1,1]);
+isUniform([1,2,1,1]);
 
 document.write("<br>");
 document.write("Next problem!")
