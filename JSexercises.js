@@ -120,58 +120,91 @@
 
 //Lecture 121 exercises
 
-function printReverse(array) {
-	for (i=array.length-1; i>=0; i--) {
-		document.write(array[i]);
-		document.write("<br>");
+// function printReverse(array) {
+// 	for (i=array.length-1; i>=0; i--) {
+// 		document.write(array[i]);
+// 		document.write("<br>");
+// 	}
+// }
+// printReverse([1,2,3,4]);
+//
+// document.write("<br>");
+// document.write("Next problem!")
+// document.write("<br> <br>");
+//
+// function isUniform(array) {
+// 	var testCase = array[0];
+// 	array.forEach(function(arr) { //shoulda used a for loop
+// 		if (arr !== testCase) {
+// 			return false;
+// 		} else {
+// 			return true;
+// 		}
+// 	});
+// }
+//
+// isUniform([1,2,1,1]);
+//
+// document.write("<br>");
+// document.write("Next problem!")
+// document.write("<br> <br>");
+//
+// function sumArray(array) {
+// 	var result = 0;
+//
+// 	array.forEach(function(items) {
+// 		result += items;
+// 	});
+// 	document.write(result);
+// }
+//
+// sumArray([1,2,9]);
+//
+// document.write("<br>");
+// document.write("Next problem!")
+// document.write("<br> <br>");
+//
+// function max(array) {
+// 	var answer = array[0];
+//
+// 	array.forEach(function(num) {
+// 		if (num > answer) {
+// 			answer = num;
+// 		}
+// 	});
+// 	document.write(answer);
+// }
+// max([-31,-40,-123]);
+
+//Lecture 128 exercise
+
+var movies = [
+	{
+		title: "Star Wars",
+		rating: 5,
+		hasWatched: true
+	},
+	{
+		title: "Passengers",
+		rating: 4,
+		hasWatched: true
+	},
+	{
+		title: "Bourne Identity",
+		rating: 5,
+		hasWatched: true
+	},
+	{
+		title: "Rogue One",
+		rating: 3,
+		hasWatched: false
 	}
-}
-printReverse([1,2,3,4]);
+];
 
-document.write("<br>");
-document.write("Next problem!")
-document.write("<br> <br>");
-
-function isUniform(array) {
-	var testCase = array[0];
-	array.forEach(function(arr) { //shoulda used a for loop
-		if (arr !== testCase) {
-			return false;
-		} else {
-			return true;
-		}
-	});
-}
-
-isUniform([1,2,1,1]);
-
-document.write("<br>");
-document.write("Next problem!")
-document.write("<br> <br>");
-
-function sumArray(array) {
-	var result = 0;
-
-	array.forEach(function(items) {
-		result += items;
-	});
-	document.write(result);
-}
-
-sumArray([1,2,9]);
-
-document.write("<br>");
-document.write("Next problem!")
-document.write("<br> <br>");
-
-function max(array) {
-	var answer = array[0];
-
-	array.forEach(function(num) {
-		if (num > answer) {
-			answer = num;
-		}
-	});
-	document.write(answer);
-}
-max([-31,-40,-123]);
+movies.forEach(function(film) {
+	if (film.hasWatched === true) {
+		document.write("You have watched " + film.title + " - " + film.rating + " stars. <br>");
+	} else {
+		document.write("You haven't watched " + film.title + " - " + film.rating + " stars. <br>");
+	}
+});
