@@ -177,34 +177,43 @@
 // max([-31,-40,-123]);
 
 //Lecture 128 exercise
+//
+// var movies = [
+// 	{
+// 		title: "Star Wars",
+// 		rating: 5,
+// 		hasWatched: true
+// 	},
+// 	{
+// 		title: "Passengers",
+// 		rating: 4,
+// 		hasWatched: true
+// 	},
+// 	{
+// 		title: "Bourne Identity",
+// 		rating: 5,
+// 		hasWatched: true
+// 	},
+// 	{
+// 		title: "Rogue One",
+// 		rating: 3,
+// 		hasWatched: false
+// 	}
+// ];
+//
+// movies.forEach(function(film) {
+// 	if (film.hasWatched === true) {
+// 		document.write("You have watched " + film.title + " - " + film.rating + " stars. <br>");
+// 	} else {
+// 		document.write("You haven't watched " + film.title + " - " + film.rating + " stars. <br>");
+// 	}
+// });
 
-var movies = [
-	{
-		title: "Star Wars",
-		rating: 5,
-		hasWatched: true
-	},
-	{
-		title: "Passengers",
-		rating: 4,
-		hasWatched: true
-	},
-	{
-		title: "Bourne Identity",
-		rating: 5,
-		hasWatched: true
-	},
-	{
-		title: "Rogue One",
-		rating: 3,
-		hasWatched: false
-	}
-];
+//Lecture 163 jQuery exercises
+$("div").css("background", "purple");
 
-movies.forEach(function(film) {
-	if (film.hasWatched === true) {
-		document.write("You have watched " + film.title + " - " + film.rating + " stars. <br>");
-	} else {
-		document.write("You haven't watched " + film.title + " - " + film.rating + " stars. <br>");
-	}
-});
+$(".highlight").css("width", "200px");
+
+$("#third").css("border", "orange 3px solid");
+
+$("div:first").css("color", "pink");
