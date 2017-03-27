@@ -210,10 +210,32 @@
 // });
 
 //Lecture 163 jQuery exercises
-$("div").css("background", "purple");
+// $("div").css("background", "purple");
+//
+// $(".highlight").css("width", "200px");
+//
+// $("#third").css("border", "orange 3px solid");
+//
+// $("div:first").css("color", "pink");
 
-$(".highlight").css("width", "200px");
+//Lecture 330 .this and prototype exercise solution
+function Vehicle(make, model, year){
+  this.make = make;
+  this.model = model;
+  this.year = year;
+  this.isRunning = false;
+  this.turnOn = function(){
+    this.isRunning = true;
+  };
+  this.turnOff = function(){
+    this.isRunning = false;
+  };
+};
 
-$("#third").css("border", "orange 3px solid");
-
-$("div:first").css("color", "pink");
+Vehicle.prototype.honk = function(){
+  if(this.isRunning === true) {
+    return("beep");
+  } else {
+    return("Turn on car");
+  }
+};
